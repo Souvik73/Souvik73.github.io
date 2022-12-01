@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: white;
+    height: 8vh;
+}
+
+.head-content{
+    display: inline-block;
+}
+
+.head-content--image{
+    float: left;
+    padding-left: 5%;
+}
+
+.head-content--nav{
+    float: right;
+    width: 60%;
+}
+
+.head-content--nav li{
+    display: inline-block;
+    padding: 1% 2%;
+}
+
+.head-content--nav li:nth-last-child(1){
+    padding: 0;
+    transform: translate(25%, 25%);
+}
+
+.head-content--nav li:hover{
+    background-color: black;
+    color: white;
+}
+
+.section1{
+    background-image: url('images/img-1.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+}
+
+.section1-wrapper{
+    color: white;
+    text-align: center;
+    height: 100%;
+    background-color: rgba(0, 5, 73, 0.8);
+}
+
+.section1-content{
+    position: relative;
+    top: 30%;
+    width: 100%;
+}
+
+.section1-content--buttons{
+    padding: 6%;
+}
+
+.section1-button{
+    display: inline-block;
+    padding: 1% 2.5%;
+    border-radius: 20px;
+    color: white;
+    border-color: white;
+}
+
+.section1-button--contact{
+    background-color: rgba(233, 201, 17, 0.986);
+    border-style: hidden;
+}
+
+.section1-button--discover{
+    background-color: rgba(185, 185, 8, 0);
+}
+
+.section1-down-arrow{
+    position: relative;
+    top: 40%;
+}
+
+.section2{
+    height: 70vh;
+    width: 100%;
+}
+
+.section2-content{
+    display: inline-block;
+}
+
+.section2-text-part{
+    float: left;
+    padding: 8%;
+    width: 40%;
+}
+
+.section2-image{
+    padding-left: 8%;
+    padding-top: 8%;
+    width: 45%;
+    height: 85%;
+}
+
+.section3{
+    background-image: url('images/img-2.jpg');
+    background-position: center;
+    background-size: 125%;
+    height: 60vh;
+}
+
+.section3-wrapper{
+    color: white;
+    text-align: center;
+    height: 100%;
+    background-color: rgba(0, 5, 73, 0.8);
+    padding: 8%;
+}
+
+.section3-columns{
+    display: inline-block;
+    padding: 3%;
+}
+
+.section3-order-buttton{
+    background-color: rgba(233, 201, 17, 0.986);
+    padding: 1% 2.5%;
+    border-radius: 20px;
+    color: white;
+}
+
+.section4{
+    height: 110vh;
+}
+
+.section4-header-text{
+    padding: 3% 8%;
+}
+
+.section4-nav{
+    padding-left: 8%;
+}
+
+.section4-nav li{
+    display: inline-block;
+    padding: 1.5%;
+}
+
+.section4-nav li:hover{
+    background: #d4d4d4;
+}
+
+.section4-gallery{
+    padding: 2% 8%;
+}
+
+.section4-gallery-image{
+    width: 25%;
+    height: 25%;
+}
+
+.section5{
+    background-image: url('images/img-4.jpg');
+    background-position: center;
+    background-size: 100%;
+    height: 25vh;
+}
+
+.section5-wrapper{
+    color: white;
+    text-align: center;
+    height: 100%;
+    background-color: rgba(0, 5, 73, 0.8);
+    padding-top: 5%;
+}
+
+.section5-content{
+    display: inline-block;
+    padding: 1%;
+}
+
+.section6{
+    height: 70vh;
+    text-align: center;
+    padding: 2%;
+    background: rgba(224, 224, 224, 0.616);
+}
+
+.section6-card{
+    display: inline-block;
+    border-style: ridge;
+    border-width: 1px;
+    height: 40vh;
+    width: 25%;
+    padding: 1.5%;
+    margin: 1%;
+    background-color: white;
+}
+
+.section6-card--button{
+    padding: 4% 10%;
+    border-radius: 20px;
+    background-color: white;
+    position: relative;
+    top: 70%;
+}
+
+.section6-card-regular--button{
+    background-color: rgba(194, 165, 1, 0.986);
+    color: white;
+    border-style: none;
+}
+
+.section7{
+    background-image: url('images/img-3.jpg');
+    background-position: center;
+    background-size: 100%;
+    height: 50vh;
+}
+
+.section7-wrapper{
+    color: white;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 5, 73, 0.8);
+    padding-top: 5%;
+}
+
+.section7-head{
+    display: inline-block;
+    margin-left: 8%;
+    width: 100%;
+}
+
+.section7-lrbutton-nav--button{
+    display: inline-block;
+    height: 6vh;
+    width: 4vw;
+    position: relative;
+    left: 70%;
+    top: -4vh;
+}
+
+.section7-lrbutton-nav--left{
+    background-color: rgb(29, 29, 110);
+    color: white;
+    border-style: none;
+}
+
+.section7-lrbutton-nav--right{
+    background-color: rgba(208, 223, 0, 0.815);
+    color: white;
+    border-style: none;
+}
+
+.section7-body-names{
+    text-align: center;
+}
+
+.section7-body-names div{
+    display: inline-block;
+    padding: 8%;
+}
+
+.section8{
+    height: 70vh;
+    width: 100%;
+    padding-top: 4%;
+    padding-left: 8%;
+    background: rgba(224, 224, 224, 0.616);
+}
+
+.section8-card-image{
+    width: 100%;
+}
+
+.section8-card{
+    display: inline-block;
+    width: 28%;
+    height: 70%;
+    background-color: white;
+    margin: 2%;
+}
+
+.section8-card-button{
+    position: relative;
+    top: 20%;
+    left: 20%;
+    height: 10%;
+    width: 40%;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.section8-card-button--center{
+    background-color: rgba(208, 223, 0, 0.815);
+    color: white;
+}
+
+footer{
+    background-color: rgb(56, 56, 155);
+    height: 40vh;
+    color: white;
+}
+
+.footer-logo-image{
+    width: 20%;
+    padding-left: 8%;
+}
+
+footer div{
+    display: inline-block;
+    position: relative;
+    top: 20%;
+    padding: 5%;
+}
