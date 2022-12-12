@@ -127,9 +127,9 @@ h1{
 
 /* section2 */
 
-/* .section2-content{
-    display: inline-block;
-} */
+.section2{
+    background: rgba(224, 224, 224, 0.616);
+}
 
 .section2-content-area{
     display: flex;
@@ -199,9 +199,9 @@ h1{
 
 /* section4 */
 
-/* .section4{
-     
-} */
+.section4{
+    background: rgba(224, 224, 224, 0.616);
+}
 .section4-nav{
     padding-top: 40px;
 }
@@ -484,4 +484,38 @@ footer{
     width: 200px;
     height: 50px;
     background: none;
+}
+
+.footer-subscribe{
+    display: flex;
+    flex-direction: column;
+    /* height: 100px; */
+}
+
+.searchbox{
+    display: flex;
+    padding-top: 30px;
+}
+
+.searchbox input{
+    height: 40px;
+    width: 180px;
+    border-radius: 50px 0px 0px 50px;
+    padding-left: 20px;
+    color: black;
+    border: 0px;
+}
+
+.searchbox--send{
+    width: 40px;
+    height: 40px;
+    background-color: #d0a904;
+    border-radius: 0px 50px 50px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchbox--send-image{
+    width: 25px;
 }
