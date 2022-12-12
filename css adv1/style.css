@@ -1,0 +1,172 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    max-width: 1600px;
+}
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #d9d9d9;
+    height: 80px;
+    padding: 0 20px;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.head-content--nav{
+    display: flex;
+    flex-direction: row;
+}
+
+.head-content--nav li:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+nav li{
+    padding: 20px;
+}
+
+.banner{
+    height: 200px;
+    background: #06a3cc;
+}
+
+.banner-content-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 30px;
+}
+
+.banner-content--left-arrow{
+    height: 50px;
+}
+
+.banner-content--text{
+    font-size: 3rem;
+    color: white;
+}
+
+.banner-content--right-arrow{
+    height: 50px;
+}
+
+.main{
+    height: 450px;
+    font-size: 0;
+    padding: 10px 90px;
+}
+
+.main-content-area{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.main-content--body{
+    height: 100%;
+    width: 50%;
+    background: #ffe469;
+    padding-right: 20px;
+    background-clip: content-box;
+    position: relative;
+}
+
+.main-content--section-content-area{
+    height: 100%;
+    width: 50%;
+}
+
+.main-inblock{
+    display: inline-block;
+}
+
+.main-content--form{
+    height: 60%;
+    width: 100%;
+    background: #ed8719;
+    padding-bottom: 20px;
+    background-clip: content-box;
+}
+
+input{
+    width: 100%;
+}
+
+.main-content--form-content-area{
+    width: 70%;
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input[type="text"], textarea {
+    height: 30px;
+    background-color: #f8a549;
+    border-color: wheat;
+}
+
+select {
+    height: 30px;
+    background-color: #f8a549;
+    border-color: wheat;
+}
+
+input[type="button"], textarea{
+    width: 100px;
+    height: 30px;
+    background-color: #f8a549;
+    border-color: wheat;
+    color: white;
+}
+
+.main-content--extra{
+    height: 40%;
+    width: 100%;
+    background: #8ae33b;
+    background-clip: content-box;
+}
+
+.main-content--positioned{
+    background: #d39ed6;
+    position: absolute;
+    height: 320px;
+    width: 300px;
+    top: 320px;
+    left: 40px;
+}
+
+footer{
+    height: 75px;
+    background: #007694;
+    color: white;
+    text-align: center;
+}
+
+.footer-nav ul{
+    justify-content: center;
+}
+
+.footer-nav li{
+    padding: 25px 5px;
+}
+
+.footer-nav li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
