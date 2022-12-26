@@ -458,6 +458,10 @@ header {
     align-items: center;
 
 }
+.accomplishment-column:hover{
+    color: #d0a904;
+    cursor: pointer;
+}
 
 /* pricing-plans */
 .pricing-plans {
