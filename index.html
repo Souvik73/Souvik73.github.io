@@ -1,575 +1,298 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
+<html lang="en">
 
-<head>
+    <!-- Basic -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>css adv2</title>
-    <meta name="description" content="css assignment 3">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+ 
+     <!-- Site Metas -->
+    <title>Souvik Banerjee</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
     <link rel="stylesheet" href="style.css">
-    <!-- <style>
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
 
-    </style> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    <link href='https://css.gg/math-plus.css' rel='stylesheet'>
-    <link href='https://css.gg/chevron-down.css' rel='stylesheet'>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
+<body id="page-top" class="politics_version">
 
-<body>
-    <!-- Head Bar Part-->
-    <header>
-        <div class="header-content">
-            <div class="head-content--image ">
-                <img src="images/head_logo.jpg">
-            </div>
-            <nav class="head-content--nav ">
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Portfolio</li>
-                    <li>Price</li>
-                    <li>Blog</li>
-                    <li><img src="images/mail.jpg" class="head-content--nav-image"></li>
-                </ul>
-            </nav>
+    <!-- LOADER -->
+    <div id="preloader">
+        <div class="loader">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+    </div><!-- end loader -->
+    <!-- END LOADER -->
+	
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+			<img class="img-fluid" src="images/logo.png" alt="" />
+		</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact Me</a>
+            </li>
+          </ul>
         </div>
+      </div>
+    </nav>
+	
+	<div id="home" class="ct-header ct-header--slider ct-slick-custom-dots">
+		<div class="ct-slick-homepage" data-arrows="true" data-autoplay="false">
 
-    </header>
+			<div class="ct-header tablex item" data-background="uploads/banner-01.jpg">
+				<div class="ct-u-display-tablex">
+					<div class="inner">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-8 col-lg-8 slider-inner">
+									<h1 class="big animated">Hello I'm Software Developer</h1>
+									<p class="animated">I specialize in Flutter development and have professional experience working with Drupal.</p>
+									<a class="btn-new from-middle animated" href="#">Download cv</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div><!-- .ct-slick-homepage -->
+	</div><!-- .ct-header --> 
 
-    <!-- section 1 -->
-    <section class="intro">
-        <div class="intro-content-area section-content">
-            <div class="intro-content">
-                <h1>We Will <strong>Make</strong> Your <strong>Bussiness</strong> Great Again</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit Nam elit purus, sagittis ac
-                </p>
-                <div class="intro-content--buttons">
-                    <button class="intro-button--contact intro-button">
-                        Contact Us
-                    </button>
-                    <button class="intro-button--discover intro-button">
-                        Discover Now
-                    </button>
-                </div>
-                <div class="intro-down-arrow">
-                    <!-- <img src="images/icons/darrow.png" class="intro-down-arrow--image"> -->
-                    <i class="gg-chevron-down"></i>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div id="about" class="section wb">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="message-box">                        
+                        <h2>About Souvik.</h2>
+                        <p>I am a <strong>Software Developer</strong> at <strong>Innoraft Pvt Ltd.</strong>, where I have been contributing since <strong>January 2023</strong>.</p>
+						<p>Passionate about technology, I have collaborated with diverse clients, ensuring high-quality product development and their complete satisfaction.</p>
+						<p>When I am not coding, you will likely find me <strong>playing chess, listening to music, or doing both at once!</strong></p>
+						
+						<ul>
+							<li><b>Connect with me</b></li>
+							<li><a href="https://www.linkedin.com/in/souvik-banerjee-1a937a191/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+							<li><a href="https://www.instagram.com/_souvik.banerjee_/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+							<li><a href="mailto:souvikbanerjee73@gmail.com"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+						</ul>
 
-    <!-- section2 -->
-    <section class="hello-world ">
-        <div class="hello-world-content-area section-content">
-            <div class="hello-world-text-part hello-world-content">
-                <h2>Hello <strong>World</strong> </h2>
-                <p class="hello-world-text-part--description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet urna ullamcorper, tincidunt ex eget, bibendum urna. Nullam at est non felis convallis dictum. Pellentesque facilisis luctus mi, in feugiat erat tempor quis. Vestibulum ullamcorper rutrum lectus. Aliquam eget nulla sed massa tempor viverra.
-                </p>
-                <div class="hello-world-text-part--content">
-                    <div class="hello-world-text-part--explore hello-world-text-part--with-image">
-                        <img src="images/icons/i-diamond_b.svg" class="hello-world-text-part--image" height="50px">
-                        Exploring your area of activity
-                    </div>
-                    <div class="hello-world-text-part--compete hello-world-text-part--with-image">
-                        <img src="images/icons/i-wallet_b.svg" class="hello-world-text-part--image" height="50px">
-                        Competitive analysis
-                    </div>
-                    <div class="hello-world-text-part--work hello-world-text-part--with-image">
-                        <img src="images/icons/i-trophy_b.svg" class="hello-world-text-part--image" height="50px">
-                        Do the Work in time
-                    </div>
-                </div>
+						<a class="btn-new from-middle animated" href="#">Download cv</a>
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
 
-            </div>
+                <div class="col-md-6">
+                    <div class="right-box-pro wow fadeIn">
+						<img src="images/about-1.jpeg" alt="" class="img-fluid img-rounded fat-ab">
+                    </div><!-- end media -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+	
+    <div id="services" class="section lb">
+        <div class="container">
+            <div class="section-title text-center">
+                <h3>Services</h3>
+                <p>These are the domains I am professional expertise on</p>
+            </div><!-- end title -->
 
-            <img src="images/img-3.jpg" class="hello-world-image hello-world-content">
+            <div class="row">
+				<div class="col-md-4">
+                    <div class="services-inner-box">
+						<div class="ser-icon">
+							<i class="flaticon-smartphone"></i>
+						</div>
+						<h2>Flutter Development</h2>
+						<ul class="services-inner-box-list">
+							<li><strong>Custom Flutter App Development</strong> – Scalable, modular mobile solutions using Clean Architecture for startups and enterprises</li>
+							<li><strong>UI/UX Architecture</strong> – Atomic design systems with responsive layouts and fluid animations</li>
+							<li><strong>Firebase Ecosystem Integration</strong> – Auth, Firestore, Cloud Functions, and messaging with reactive architecture</li>
+							<li><strong>API & Backend Communication</strong> – REST integration with state management via Riverpod/Bloc and repository pattern</li>
+							<li><strong>App Lifecycle Management</strong> – Code refactoring, structured maintenance, and seamless feature rollouts</li>
+						</ul>
+					</div>
+                </div><!-- end col -->
+				<div class="col-md-4">
+                    <div class="services-inner-box">
+						<div class="ser-icon">
+							<i class="flaticon-seo"></i>
+						</div>
+						<h2>Drupal Development</h2>
+						<ul class="services-inner-box-list">
+							<li><strong>Custom Themes & Modules</strong> – Bespoke designs and functionality</li>
+							<li><strong>Migration & Upgrades</strong> – Drupal 7/8 to Drupal 9/10</li>
+							<li><strong>Performance Optimization</strong> – Caching and CDN integration</li>
+							<li><strong>Security & Maintenance</strong> – Updates and vulnerability patches</li>
+							<li><strong>API Integrations</strong> – RESTful services, third-party systems, and headless Drupal</li>
+						</ul>
+					</div>
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+	
+	<div id="portfolio" class="section lb">
+		<div class="container">
+			<div class="section-title text-center">
+                <h3>Companies I have worked for</h3>
+            </div><!-- end title -->
+			
+			
+			<div class="gallery-list row">
+				<div class="col-md-4 col-sm-6 gallery-grid gal_a gal_b">
+					<div class="gallery-single spi-hr fix hover">
+						<img src="uploads/gallery_img-01.jpeg" class="img-fluid" alt="Image">
+						<div class="text-hover">
+							<h3>Innoraft Solutions</h3>
+						</div>
+						<div class="img-overlay">
+							<a href="uploads/gallery_img-01.jpeg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-md-4 col-sm-6 gallery-grid gal_c gal_b">
+					<div class="gallery-single spi-hr fix">
+						<img src="uploads/gallery_img-02.png" class="img-fluid" alt="Image">
+						<div class="text-hover">
+							<h3>ProWorkTree</h3>
+						</div>
+						<div class="img-overlay">
+							<a href="uploads/gallery_img-02.png" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-md-4 col-sm-6 gallery-grid gal_a gal_c">
+					<div class="gallery-single spi-hr fix">
+						<img src="uploads/gallery_img-03.jpeg" class="img-fluid" alt="Image">
+						<div class="text-hover">
+							<h3>Riqsha</h3>
+							<h4>Last Mile</h4>
+						</div>
+						<div class="img-overlay">
+							<a href="uploads/gallery_img-03.jpeg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-        </div>
+    <div id="contact" class="section db text-white">
+		<div class="container">
+			<div class="section-title text-center">
+				<h3>Contact Me</h3>
+				<p>If you’d like to get in touch, feel free to use the contact details below or connect with me on social media. I look forward to hearing from you!</p>
+			</div><!-- end title -->
+	
+			<div class="row contact-info text-center">
+				<div class="col-md-4">
+					<div class="contact-box">
+						<i class="fa fa-envelope fa-2x text-white" aria-hidden="true"></i>
+						<h4>Email</h4>
+						<p><a href="mailto:souvikbanerjee73@gmail.com" class="text-white">souvikbanerjee73@gmail.com</a></p>
+					</div>
+				</div><!-- end col -->
+	
+				<div class="col-md-4">
+					<div class="contact-box">
+						<i class="fa fa-map-marker fa-2x text-white" aria-hidden="true"></i>
+						<h4>Location</h4>
+						<p class="text-white">Kolkata, India</p>
+					</div>
+				</div><!-- end col -->
+			</div><!-- end row -->
+	
+			<div class="row text-center">
+				<div class="col-md-12">
+					<p>You can also reach me via my social channels:</p>
+					<ul class="list-inline">
+						<li class="list-inline-item">
+							<a href="https://www.linkedin.com/in/souvik-banerjee-1a937a191/" target="_blank" class="text-white">
+								<i class="fa fa-linkedin fa-2x text-white" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li class="list-inline-item">
+							<a href="https://www.instagram.com/_souvik.banerjee_/" target="_blank" class="text-white">
+								<i class="fa fa-instagram fa-2x text-white" aria-hidden="true"></i>
+							</a>
+						</li>
+						<!-- Add more social links here if needed -->
+					</ul>
+				</div>
+			</div><!-- end row -->
+		</div><!-- end container -->
+	</div><!-- end section -->
+	
 
-    </section>
-
-    <!-- services -->
-    <section class="services">
-        <div class="services-content-area">
-            <div class="services-content section-content">
-                <div class="services-heading">
-                    <h2>
-                        Some of our <strong>best services</strong><br>
-                        to solve your problems
-                    </h2>
-                </div>
-                <div class="services-columns-wrapper">
-                    <div class="services-digmarketing services-columns">
-                        <div class="services-digmarketting--icon section-icon">
-                            <img src="images/icons/i-message.svg" height="60px">
-                        </div>
-                        <h3>
-                            Digital Marketting
-                        </h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet urna ullamc
-                        </p>
-
-                    </div>
-                    <div class="services-webdev services-columns">
-                        <div class="services-webdev--icon section-icon">
-                            <img src="images/icons/i-feature.svg" height="60px">
-                        </div>
-                        <h3>
-                            Web Development
-                        </h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet urna ullamc
-                        </p>
-                    </div>
-                    <div class="services-uiux services-columns">
-                        <div class="services-uiux--icon section-icon ">
-                            <img src="images/icons/i-sketch.svg" height="60px">
-                        </div>
-                        <h3>
-                            UI/UX Design
-                        </h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet urna ullamc
-                        </p>
-                    </div>
-                </div>
-                <div class="services-button">
-                    <button class="services-order-button">
-                        Order a Service
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="designs ">
-        <div class="designs-content-area section-content">
-            <div class="designs-header-text">
-                <h2>
-                    <strong>Good design</strong>
-                    is obvious<br> Great design is transparent
-                </h2>
-                <p>
-                    <strong>About Joe @</strong> Nam placerat nisl eget ipsum convallis 
-                </p>
-            </div>
-            <nav class="designs-nav">
-                <ul>
-                    <li>Show all</li>
-                    <li>Design</li>
-                    <li>Code</li>
-                    <li>Art</li>
-                </ul>
-            </nav>
-            <div class="designs-gallery">
-                <div class="designs-gallery--column">
-                    <div class="column-image">
-                        <img src="images/12-min.jpg" class="designs-gallery-image--skateboard">
-                        <div class="onhover">
-                            <div class="onhover-icon">
-                                <i class="gg-math-plus"></i>
-                            </div>
-                            <h3>Project Title</h3>
-                            <p>
-                                Code
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="column-image">
-                        <img src="images/2-min.jpg" class="designs-gallery-image--book">
-                        <div class="onhover">
-                            <div class="onhover-icon">
-                                <i class="gg-math-plus"></i>
-                            </div>
-                            <h3>Project Title</h3>
-                            <p>
-                                Code
-                            </p>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="designs-gallery--column">
-                    <div class="column-image">
-                        <img src="images/2-min.jpg" class="designs-gallery-image--book">
-                        <div class="onhover">
-                            <div class="onhover-icon">
-                                <i class="gg-math-plus"></i>
-                            </div>
-                            <h3>Project Title</h3>
-                            <p>
-                                Code
-                            </p>
-                        </div>
-                    </div>
-                    <div class="column-image">
-                        <img src="images/2-min.jpg" class="designs-gallery-image--book">
-                        <div class="onhover">
-                            <div class="onhover-icon">
-                                <i class="gg-math-plus"></i>
-                            </div>
-                            <h3>Project Title</h3>
-                            <p>
-                                Code
-                            </p>
-                        </div>
-                    </div>
-                    <div class="column-image">
-                        <img src="images/2-min.jpg" class="designs-gallery-image--book">
-                        <div class="onhover">
-                            <div class="onhover-icon">
-                                <i class="gg-math-plus"></i>
-                            </div>
-                            <h3>Project Title</h3>
-                            <p>
-                                Code
-                            </p>
-                        </div>
-                    </div>
-                    
-        
-                </div>
-                <div class="designs-gallery--column">
-                    <div class="column-image">
-                        <img src="images/2-min.jpg" class="designs-gallery-image--book">
-                        <div class="onhover">
-                            <div class="onhover-icon">
-                                <i class="gg-math-plus"></i>
-                            </div>
-                            <h3>Project Title</h3>
-                            <p>
-                                Code
-                            </p>
-                        </div>
-                    </div>
-                    <div class="column-image">
-                        <img src="images/12-min.jpg" class="designs-gallery-image--skateboard">
-                        <div class="onhover">
-                            <div class="onhover-icon">
-                                <i class="gg-math-plus"></i>
-                            </div>
-                            <h3>Project Title</h3>
-                            <p>
-                                Code
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- <img src="images/12-min.jpg" width="25%"> -->
-            </div>
-        </div>
-
-    </section>
-
-    <section class="accomplishment">
-        <div class="accomplishment-content-area ">
-            <div class="accomplishment-content section-content">
-                <div class="accomplishment-customers accomplishment-column">
-                    <div class="section-icon">
-                        <img src="images/icons/i-team.svg" height="60px">
-                    </div>
-                    <p>
-                        Unique Customers:
-                    </p>
-                    <h3>3519+</h3>
-
-                </div>
-                <div class="accomplishment-projects accomplishment-column">
-                    <div class="section-icon">
-                        <img src="images/icons/i-shield.svg" height="60px">
-                    </div>
-                    <p>
-                        Completed Projects:
-                    </p>
-                    <h3>3519+</h3>
-                </div>
-                <div class="accomplishment-users accomplishment-column">
-                    <div class="section-icon">
-                        <img src="images/icons/i-diamond.svg" height="60px">
-                    </div>
-                    <p>
-                        Happy Users:
-                    </p>
-                    <h3>3519+</h3>
-
-                </div>
-                <div class="accomplishment-awards accomplishment-column">
-                    <div class="section-icon">
-                        <img src="images/icons/i-trophy.svg" height="60px">
-                    </div>
-                    <p>
-                        Honors and awards:
-                    </p>
-                    <h3>3519+</h3>
+    <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+                <div class="footer-left">
+                    <p class="footer-company-name">All Rights Reserved. &copy; 2018 <a href="#">Souvik</a> Design By : 
+					<a href="https://html.design/">html design</a></p>
                 </div>
             </div>
-        </div>
-    </section>
+        </div><!-- end container -->
+    </div><!-- end copyrights -->
 
-    <section class="pricing-plans ">
-        <div class="pricing-plans-content-area section-content">
-            <div class="pricing-plans-heading">
-                <h2>
-                    Flexible <strong>Pricing</strong> Plans
-                </h2>
-            </div>
-            <p class="pricing-plans-description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit
-            </p>
-            <div class="pricing-plans-content--cards">
-                <div class="pricing-plans-card-trial pricing-plans-card">
-                    <div class="pricing-plans-card--heading">
-                        <h3>Trial version</h3>
-                    </div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum
-                    </p>
-                    <div class="pricing-plans-card--middle-section">
-                        <h4>free</h4>
-                    </div>
-                    <div class="pricing-plans-trial--features">
-                        <p>
-                            500gb drive space
-                        </p>
-                        <p>
-                            Unlimited messages
-                        </p>
-                        <p>
-                            Free Email adress
-                        </p>
-                        <p>
-                            Friendly Support
-                        </p>
-                    </div>
-                    
-                    <button class="pricing-plans-card-trial--button pricing-plans-card--button">Download</button>
-                </div>
-                <div class="pricing-plans-card-regular pricing-plans-card">
-                    <div class="pricing-plans-card--heading">
-                        <h3>Regular</h3>
-                    </div>
-                    <p>
-                        Vestibulum gravida libero augue, ut ultrices nisl lacinia nec. Mauris mauris arcu
-                    </p>
-                    <div class="pricing-plans-card--middle-section">
-                        <h4>
-                            <span>$</span>19<span>/Month</span>
-                        </h4>
-                    </div>
-                    <div class="pricing-plans-regular--features">
-                        <p>
-                            500gb drive space
-                        </p>
-                        <p>
-                            Unlimited messages
-                        </p>
-                        <p>
-                            Free Email adress
-                        </p>
-                        <p>
-                            Friendly Support
-                        </p>
-                    </div>
-                    <button class="pricing-plans-card-regular--button pricing-plans-card--button">Purchase</button>
-                </div>
-                <div class="pricing-plans-card-extended pricing-plans-card">
-                    <div class="pricing-plans-card--heading">
-                        <h3>Extended</h3>
-                    </div>
-                    <p>
-                        Donec aliquet dolor eu ipsum rutrum venenatis. Curabitur aliquam dui
-                    </p>
-                    <div class="pricing-plans-card--middle-section">
-                        <h4>
-                            <span>$</span>29<span>/Month</span>
-                        </h4>
-                    </div>
-                    <div class="pricing-plans-extended--features">
-                        <p>
-                            500gb drive space
-                        </p>
-                        <p>
-                            Unlimited messages
-                        </p>
-                        <p>
-                            Free Email adress
-                        </p>
-                        <p>
-                            Friendly Support
-                        </p>
-                    </div>
-                    <button class="pricing-plans-card-extended--button pricing-plans-card--button">Purchase</button>
-                </div>
-            </div>
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
 
-        </div>
-    </section>
-
-    <section class="testimonials">
-        <div class="testimonials-content-area ">
-            <div class="testimonials-content section-content">
-                <div class="testimonials-heading">
-                    <div class="testimonials-heading-text testimonials-head">
-                        <h2>
-                            <strong>Testimonials</strong>
-                            About Us
-                        </h2>
-                    </div>
-                    <div class="testimonials-lrbutton-nav testimonials-head">
-                        <button class="testimonials-lrbutton-nav--left testimonials-lrbutton-nav--button">
-                            &lt;
-                        </button>
-                        <button class="testimonials-lrbutton-nav--right testimonials-lrbutton-nav--button">
-                            &gt;
-                        </button>
-                    </div>
-                </div>
-
-                <div class="testimonials-body-names">
-                    <div class="testimonials-body-names--left">
-                        <div>
-                            <img src="images/t-1.jpeg" class="testimonials-body-names--image">
-                        </div>
-                        <h3>
-                            Robert Newman
-                        </h3>
-                        <p>
-                            <i>Microsoft Corporation</i>
-                        </p>
-                        <p>
-                            Maecenas quam risus, tincidunt in pulvinar a, dapibus vel nisl. Integer gravida finibus rhoncus. Integer eu lorem lobortis, gravida turpis sed, consectetur sem. Suspendisse luctus
-                        </p>
-                    </div>
-                    <div class="testimonials-body-names--right">
-                        <div>
-                            <img src="images/t-2.jpeg" class="testimonials-body-names--image">
-                        </div>
-                        <h3>
-                            Robert Newman
-                        </h3>
-                        <p>
-                            <i>Space X</i>
-                        </p>
-                        <p>
-                            Maecenas quam risus, tincidunt in pulvinar a, dapibus vel nisl. Integer gravida finibus rhoncus. Integer eu lorem lobortis, gravida turpis sed, consectetur sem. Suspendisse luctus
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-
-    <section class="blog-post">
-        <div class="blog-post-content-area section-content">
-            <div class="blog-post-heading">
-                <h2>
-                    Latest <strong>blog</strong> post
-                </h2>
-            </div>
-            <p class="blog-post-description">
-                Lorem ipsum dolor sit amet, consectetu
-            </p>
-            <div class="blog-post-card-container">
-                <div class="blog-post-card--left blog-post-card">
-
-                    <img src="images/img-2.jpg" class="blog-post-card-image">
-
-                    <div class="blog-post-card-text">
-                        <h3>Fusce magna tellus sodales non felis ve</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet urna ullamcorpe
-                        </p>
-                    </div>
-                    <button class="blog-post-card-button--left blog-post-card-button">Read more</button>
-
-                </div>
-                <div class="blog-post-card--center blog-post-card">
-
-                    <img src="images/img-2.jpg" class="blog-post-card-image">
-
-                    <div class="blog-post-card-text">
-                        <h3>Fusce magna tellus sodales non felis ve</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet urna ullamcorpe
-                        </p>
-                    </div>
-                    <button class="blog-post-card-button--center blog-post-card-button">Read more</button>
-
-                </div>
-                <div class="blog-post-card--right blog-post-card">
-
-                    <img src="images/img-2.jpg" class="blog-post-card-image">
-
-                    <div class="blog-post-card-text">
-                        <h3>Fusce magna tellus sodales non felis ve</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet urna ullamcorpe
-                        </p>
-                    </div>
-
-                    <button class="blog-post-card-button--right blog-post-card-button">Read more</button>
-
-                </div>
-            </div>
-        </div>
-
-
-    </section>
-
-    <footer>
-        <div class="footer-content-area">
-            <img src="images/logo-footer.jpg" class="footer-logo-image" width="60">
-
-            <div class="footer-columns">
-                <div class="footer-columns--content">
-                    <h2><strong>Company</strong></h2>
-                    <p>About</p>
-                    <p>Support</p>
-                    <p>Press</p>
-                    <p>Legal & Privacy</p>
-                </div>
-                <div class="footer-columns--content">
-                    <h2><strong>Quick Links</strong></h2>
-                    <p>News</p>
-                    <p>Contact Us</p>
-                    <p>FAQ</p>
-                </div>
-                <div class="footer-columns--content">
-                    <h2><strong>Social</strong></h2>
-                    <p>Facebook</p>
-                    <p>Google+</p>
-                    <p>Twitter</p>
-                    <p>Instagram</p>
-                </div>
-                <div class="footer-subscribe">
-                    <div>
-                        <h2><strong>Subscribe Newspaper</strong></h2>
-                    </div>
-                    <div class="searchbox">
-                        <input type="text" name="email" placeholder="email">
-                        <div class="searchbox--send">
-                            <image src="images/icons/i-message.svg" class="searchbox--send-image"></image>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- <script src="jquery-3.6.1.min.js" async defer></script> -->
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+	<!-- Camera Slider -->
+	<script src="js/jquery.mobile.customized.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script> 
+	<script src="js/parallaxie.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/animated-slider.js"></script>
+	<!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
 </body>
-
 </html>
