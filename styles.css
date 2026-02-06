@@ -44,14 +44,14 @@ body {
 }
 
 .page::before,
-.page::after {
+/* .page::after {
   content: "";
   position: absolute;
   border-radius: 50%;
   filter: blur(0px);
   opacity: 0.4;
   pointer-events: none;
-}
+} */
 
 .page::before {
   width: 420px;
