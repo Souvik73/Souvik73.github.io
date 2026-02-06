@@ -12,8 +12,14 @@
   --shadow: 0 20px 45px rgba(15, 23, 42, 0.15);
   --radius: 24px;
   --max-width: 1120px;
+  --header-offset: 84px;
   --title-font: "Fraunces", "Times New Roman", serif;
   --body-font: "Space Grotesk", "Trebuchet MS", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--header-offset);
 }
 
 * {
@@ -30,12 +36,11 @@ body {
   color: var(--ink);
   line-height: 1.6;
   min-height: 100vh;
-  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .page {
   position: relative;
-  overflow: hidden;
 }
 
 .page::before,
@@ -76,6 +81,11 @@ a {
 
 .section {
   padding: clamp(60px, 8vw, 110px) 20px;
+}
+
+main#top,
+section[id] {
+  scroll-margin-top: var(--header-offset);
 }
 
 .section-header {

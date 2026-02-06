@@ -1,7 +1,9 @@
 const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelector('.nav-links');
 const navAnchors = navLinks ? navLinks.querySelectorAll('a') : [];
+const header = document.querySelector('.site-header');
 const yearEl = document.getElementById('year');
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
 if (yearEl) {
   yearEl.textContent = new Date().getFullYear();
@@ -15,7 +17,23 @@ if (navToggle && navLinks) {
 }
 
 navAnchors.forEach((anchor) => {
-  anchor.addEventListener('click', () => {
+  anchor.addEventListener('click', (event) => {
+    const href = anchor.getAttribute('href');
+    if (href && href.startsWith('#')) {
+      const target = document.querySelector(href);
+      if (target) {
+        event.preventDefault();
+        const headerOffset = header ? header.getBoundingClientRect().height : 0;
+        const targetTop = target.getBoundingClientRect().top + window.pageYOffset;
+        const scrollTarget = Math.max(targetTop - headerOffset - 8, 0);
+
+        window.scrollTo({
+          top: scrollTarget,
+          behavior: prefersReducedMotion.matches ? 'auto' : 'smooth',
+        });
+      }
+    }
+
     if (navLinks.classList.contains('open')) {
       navLinks.classList.remove('open');
       if (navToggle) {
