@@ -3,11 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Project One | Flutter Product App</title>
-    <meta
-      name="description"
-      content="Project details for a Flutter product app with links to terms and conditions and privacy policy."
-    />
+    <title>Avahanaa | Details</title>
+    <meta name="description" content="Avahanaa details page." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,7 +17,7 @@
     <div class="page">
       <header class="site-header">
         <nav class="nav" aria-label="Primary">
-          <a class="logo" href="index.html#top">Your Name</a>
+          <a class="logo" href="index.html#top">Souvik Banerjee</a>
           <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
             Menu
           </button>
@@ -34,44 +31,38 @@
       </header>
 
       <main class="page-main" id="top">
-        <section class="section" aria-labelledby="project-one-title">
+        <section class="section" aria-labelledby="project-two-title">
           <div class="single-page-header" data-reveal>
             <p class="eyebrow">Project details</p>
-            <h1 id="project-one-title" class="single-page-title">Project One - Flutter App</h1>
+            <h1 id="project-two-title" class="single-page-title">Avahanaa</h1>
             <p class="single-page-subtitle">
-              A mobile-first Flutter product focused on frictionless onboarding and consistent user
-              engagement.
+              Get notifications through QR placed on your vehicle.
             </p>
           </div>
 
           <div class="detail-shell" data-reveal>
             <article class="detail-card">
-              <div class="project-icon" aria-hidden="true">FL</div>
+              <div class="project-icon" aria-hidden="true">P2</div>
               <h2>Overview</h2>
               <p>
-                This project is a Flutter implementation, not Drupal. The goal is to deliver a clean,
-                high-performing app experience across Android and iOS from a single codebase.
+                Avahanaa is a Flutter mobile app that gives vehicle owners a shareable QR code to place on their car. Scanning the QR code lets others notify the owner about parking or vehicle issues, and the owner receives push notifications plus a high‑attention alarm. The app uses Firebase for authentication, Firestore for user/QR/notification data, and FCM for notifications. AdMob banners are shown on mobile builds.
               </p>
               <p>
-                The app architecture is built to keep feature work predictable while maintaining smooth
-                interactions for users.
+                Core Flows:
               </p>
               <ul class="detail-list">
-                <li>Cross-platform Flutter UI with reusable components</li>
-                <li>Performance-oriented screen transitions and state updates</li>
-                <li>Scalable structure for adding future app modules</li>
+                <li>Sign up with email/password, optional phone, and vehicle details. Users can fetch vehicle data by registration number via a RapidAPI RTO lookup.</li>
+                <li>Email verification gate before entering the app.</li>
+                <li>Home screen shows the user’s QR code, auto‑generates it if missing, and syncs QR metadata to Firestore.</li>
+                <li>Notifications screen lists alerts, shows details, marks read, and supports delete/clear all.</li>
+                <li>Profile screen lets users edit vehicle details, phone, password, toggle QR notifications, view stats, and delete the account.</li>
+                <li>QR Code screen supports full‑size view, copy link, share QR image, and print instructions.</li>
               </ul>
-            </article>
-
-            <article class="detail-card">
-              <h2>Legal links</h2>
+              <br>
               <p>
-                Terms and conditions and privacy policy pages are now added and linked below. You can
-                update their full content later.
+                <a class="button primary" href="https://github.com/Souvik73/Avahanaa" target="blank">Repository Link</a>
               </p>
               <div class="detail-actions">
-                <a class="button primary" href="project-one-terms.html">Terms and Conditions</a>
-                <a class="button ghost" href="project-one-privacy.html">Privacy Policy</a>
                 <a class="button ghost" href="index.html#projects">Back to portfolio</a>
               </div>
             </article>
@@ -80,7 +71,7 @@
       </main>
 
       <footer class="site-footer">
-        <p>Portfolio of Your Name. <span id="year"></span></p>
+        <p>Portfolio of Souvik Banerjee. <span id="year"></span></p>
       </footer>
     </div>
 

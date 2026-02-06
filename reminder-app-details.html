@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Reminder App</title>
+    <meta
+      name="description"
+      content="Project details for a Flutter product app with links to terms and conditions and privacy policy."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header">
+        <nav class="nav" aria-label="Primary">
+          <a class="logo" href="index.html#top">Souvik Banerjee</a>
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+            Menu
+          </button>
+          <div id="nav-links" class="nav-links">
+            <a href="index.html#about">About</a>
+            <a href="index.html#skills">Skills</a>
+            <a href="index.html#projects">Work</a>
+            <a href="index.html#contact">Contact</a>
+          </div>
+        </nav>
+      </header>
+
+      <main class="page-main" id="top">
+        <section class="section" aria-labelledby="project-one-title">
+          <div class="single-page-header" data-reveal>
+            <p class="eyebrow">Project details</p>
+            <h1 id="project-one-title" class="single-page-title">The Reminder App</h1>
+            <p class="single-page-subtitle">
+              A mobile-first Flutter product focused on Reminders, Alarms and Notifications.
+            </p>
+          </div>
+
+          <div class="detail-shell" data-reveal>
+            <article class="detail-card">
+              <div class="project-icon" aria-hidden="true">FL</div>
+              <h2>Overview</h2>
+              <p>
+                This is a Flutter, multi‑platform productivity app that combines reminders, alarms, hydration tracking, and Pomodoro sessions. It’s structured around BLoC state management, a local‑first data layer backed by Hive, and Firebase for authentication plus lightweight user sync. The UI is organized into a dashboard‑style home, calendar view, settings, and profile, with Google Mobile Ads banners embedded in the experience.
+              </p>
+              <p>
+                Core Features
+              </p>
+              <ul class="detail-list">
+                <li>Reminders with priority levels, quick‑add flow, and scheduled local notifications, plus a calendar view for filtering by date</li>
+                <li>Alarms with recurrence rules (daily/weekly/weekdays/weekends/custom intervals) scheduled via the alarm plugin.</li>
+                <li>Hydration tracking with a daily goal and intake logs, surfaced in home, settings, and profile screens.</li>
+                <li>Pomodoro presets (15/5, 25/5, 50/10) plus custom durations and an in‑session timer UI.</li>
+                <li>Authentication flows for Google (Firebase Auth), Apple (stubbed), and email (placeholder/local logic), with session persistence.</li>
+              </ul>
+              <br>
+              <p>
+                <a class="button primary" href="https://github.com/Souvik73/the_reminder_app" target="blank">Repository Link</a>
+              </p>
+            </article>
+
+            <article class="detail-card">
+              <h2>Legal links</h2>
+              <p>
+                Terms and conditions and privacy policy pages are now added and linked below. You can
+                update their full content later.
+              </p>
+              <div class="detail-actions">
+                <a class="button primary" href="reminder-app-terms.html">Terms and Conditions</a>
+                <a class="button ghost" href="reminder-app-privacy.html">Privacy Policy</a>
+                <a class="button ghost" href="index.html#projects">Back to portfolio</a>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>Portfolio of Souvik Banerjee. <span id="year"></span></p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
