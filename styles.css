@@ -94,6 +94,11 @@ section[id] {
   text-align: center;
 }
 
+.section-copy {
+  margin-top: 14px;
+  color: var(--muted);
+}
+
 .eyebrow {
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -346,6 +351,27 @@ p {
 .card p {
   color: var(--muted);
   margin-top: 12px;
+}
+
+.text-link {
+  display: inline-flex;
+  margin-top: 12px;
+  color: var(--teal);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+}
+
+.text-link:hover {
+  color: var(--accent-dark);
+}
+
+.drupal-profile-cta {
+  max-width: var(--max-width);
+  margin: 28px auto 0;
+  display: flex;
+  justify-content: center;
 }
 
 .timeline {
